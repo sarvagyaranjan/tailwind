@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cow {
+        margin-bottom: 7%;
+    }
+
+    .crow {
+
+
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 36px;
+        /* box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7); */
+    }
+
+    .crow {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .crow::after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 10px;
+        right: 40px;
+        transition: 0.5s;
+    }
+
+    .crow:hover {
+        padding-right: 24px;
+        padding-left: 8px;
+        background-color: rgb(1, 153, 1);
+    }
+
+    .crow:hover:after {
+        opacity: 1;
+        right: 10px;
+    }
+</style>
+
+<body class="bg-gradient-to-l from-gray-900 via-gray-900 to-black">
+    <!-- navbar begins -->
+    <div class="cow">
+
+        <div class="relative m-0 p-0">
+            <div class="absolute inset-0 bg-pink-600 blur-lg "></div>
+            <nav
+                class="flex flex-col  relative bg-gradient-to-r from-slate-800 via-black to-slate-800   md:max-h-16  md:flex-row justify-between w-full ">
+                <div class="flex justify-between ">
+                    <div class="flex flex-row-reverse">
+                        <h2
+                            class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 px-3 pt-3 pb-4 font-semibold cursor-pointer md:text-3xl md:pt-4 md:pb-3">
+                            MetaLog
+                        </h2>
+                        <img src="navlogo.webp" class="w-14 h-15 pt-2 pb-1 pl-2 cursor-pointer md:w-16 " alt="">
+                    </div>
+                    <!-- hamburger menu-->
+
+
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                        class="px-4 w-16 cursor-pointer md:hidden fill-pink-600" id="burger">
+                        <path
+                            d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" />
+
+                    </svg>
+
+
+                </div>
+                <!-- nav list -->
+                <div class="text-transparent bg-clip-text  bg-gradient-to-br from-pink-400 to-red-600 ">
+                    <ul class="hidden text-center md:flex md:mt-4 md:space-x-6 md:px-5 font-semibold" id="menu">
+                        <li class="text-lg py-2 hover:bg-black px-3 hover:text-white "><a href="#">Home</a>
+                        </li>
+                        <li class="text-lg py-2 hover:bg-black px-3 hover:text-white "><a href="#">VR</a></li>
+                        <li class="text-lg py-2 hover:bg-black px-3 hover:text-white "><a href="#">NFTs</a>
+                        </li>
+                        <li class="text-lg py-2 px-3  rounded-sm hover:bg-black hover:text-white"><button><a
+                                    href="#">Login</a></button>
+                        </li>
+                        <li class="text-lg py-2 px-3 rounded-sm hover:bg-black hover:text-white"><button><a
+                                    href="#">Sign
+                                    Up</a></button>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+    <!-- end of nav -->
+    <!-- main begins -->
+    <main>
+
+        <!-- front page cover -->
+        <div
+            class="h-screen flex flex-col items-center lg:items-baseline lg:flex-row lg:justify-between 2xl:justify-evenly mx-5 my-4">
+            <div class="flex flex-col items-center">
+                <p
+                    class=" text-3xl font-semibold py-3 text-center  md:text-4xl 2xl:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-red-600 ">
+                    Welcome to
+                    MetaLog
+                </p>
+                <button class="bg-green-500 text-white font-semibold mt-20 rounded-sm crow ">Get
+                    Started</button>
+            </div>
+
+
+
+
+
+            <!-- frontpage grid -->
+
+            <div
+                class="grid gap-7 md:place-content-between md:gap-10 max-w-xl lg:gap-4 p-4 lg:grid-cols-2 2xl:max-w-full my-10">
+
+                <p class="text-white pb-10 text-xl text-center md:text-2xl">
+                    Explore the Future of Internet with MetaLog
+                </p>
+                <div
+                    class="text-white rounded-md row-span-1 flex flex-col items-center bg-gradient-to-t from-black to-red-700 ">
+                    <span class="flex justify-center">
+                        <h2 class="text-2xl font-semibold px-2 py-2">CryptoHub</h2>
+                        <img src="btc.svg" class="w-6" alt="">
+                    </span>
+
+                    <form action="#" class="outline-none hidden lg:block">
+                        <label for="coins"></label>
+                        <div class="text-center my-2 text-lg ease-out ">
+                            <select name="" id="coins "
+                                class="px-4 my-2 text-center rounded-md font-mono outline-none text-black hover:cursor-pointer hover:text-white hover:bg-black">
+                                <option value="Eth " class="text-center rounded-sm py-2">Ethereum</option>
+                                <option value="Btc" class="text-center py-2">Bitcoin</option>
+                                <option value="dgc" class="text-center py-2">Doge Coin</option>
+                                <option value="dot" class="text-center py-2">Polkadot</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p class="py-2 my-1 italic text-center">to</p>
+                        </div>
+
+
+                        <div class="text-center  text-lg ease-out  ">
+                            <select name="" id="coins "
+                                class="px-4 my-2 text-center rounded-md font-mono outline-none text-black hover:text-white hover:bg-black hover:cursor-pointer">
+                                <option value="Eth " class="text-center rounded-sm py-2">Ethereum</option>
+                                <option value="Btc" class="text-center py-2">Bitcoin</option>
+                                <option value="dgc" class="text-center py-2">Doge Coin</option>
+                                <option value="dot" class="text-center py-2">Polkadot</option>
+                            </select>
+                        </div>
+
+
+                    </form>
+
+                    <button class="py-2 px-7 bg-blue-500 my-3 rounded-sm hidden lg:block  ">Convert</button>
+                </div>
+                <div
+                    class="bg-gradient-to-l from-purple-900 to-red-900 row-span-2 rounded-md flex flex-col items-center">
+                    <h2 class="text-xl font-semibold text-white px-3 py-3">Meet New People in the MetaVerse</h2>
+                    <p class="text-gray-300 px-3 mt-2 py-2 hidden lg:block">Make new friends and explore the world in
+                        the MetaVerse
+
+                    </p>
+
+                    <button class="bg-blue-500 my-3 py-3 px-2 text-white rounded-sm hidden lg:block">Get
+                        Started</button>
+
+                </div>
+                <div class="bg-gradient-to-b from-black to-purple-900 rounded-md flex flex-col items-center p-4">
+                    <h2 class="text-white text-lg font-semibold px-4 py-2">BlockChain System</h2>
+                    <button class="text-white bg-blue-500 px-2 py-1 my-2 tw-know-more rounded-sm hidden lg:block">Know
+                        More</button>
+                </div>
+                <div class="bg-gradient-to-b from-pink-900  to-black flex flex-col items-center  rounded-md">
+                    <h2 class="text-white px-4 py-2 my-2 font-semibold text-lg">Create Your Own Digital Identity</h2>
+                    <button class="bg-blue-500 rounded-sm text-white px-4 py-2 my-2 hidden lg:block">Lets Go</button>
+
+                </div>
+                <!-- hidden from lg -->
+                <div class="bg-gradient-to-b from-pink-900  to-black flex flex-col items-center lg:hidden rounded-md">
+                    <h2 class="text-white px-4 py-2 my-2 font-semibold text-lg">Create Your Own Digital Identity</h2>
+                    <button class="bg-blue-500 rounded-sm text-white px-4 py-2 my-2 hidden lg:block">Lets Go</button>
+
+                </div>
+                <div class="bg-gradient-to-b from-pink-900  to-black flex flex-col items-center lg:hidden rounded-md">
+                    <h2 class="text-white px-4 py-2 my-2 font-semibold text-lg">Create Your Own Digital Identity</h2>
+                    <button class="bg-blue-500 rounded-sm text-white px-4 py-2 my-2 hidden lg:block">Lets Go</button>
+
+                </div>
+                <div class="bg-gradient-to-b from-pink-900  to-black flex flex-col items-center lg:hidden rounded-md">
+                    <h2 class="text-white px-4 py-2 my-2 font-semibold text-lg">Create Your Own Digital Identity</h2>
+                    <button class="bg-blue-500 rounded-sm text-white px-4 py-2 my-2 hidden lg:block">Lets Go</button>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <!-- cards go here -->
+        <div class="max-h-screen">
+            <div
+                class="grid grid-cols-1 gap-4  place-items-center py-40 my-32  px-10 bg-gradient-to-b from-gray-900 to-red-900 lg:grid-cols-2 lg:grid-rows-2 ">
+
+
+                <div class="bg-white  max-w-xs    whitespace-normal rounded-md  mb-10 md:max-w-sm ">
+                    <img src="avatar.webp" class="rounded-md " alt="">
+                    <header>
+                        <h2 class="text-xl font-bold px-2">Create Your Own Avatar</h2>
+                    </header>
+                    <p class="px-2 mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                        vitae, corporis
+                        aspernatur adipisci
+                        iusto nesciunt. Sequi voluptate, impedit unde, iste adipisci quasi voluptatum deleniti nobis,
+                        mollitia
+                        optio similique ab officiis.</p>
+                    <button class="bg-blue-500 px-4 py-2 m-2 rounded-sm">Get Started</button>
+                </div>
+                <div class="bg-white  max-w-xs whitespace-normal  rounded-md  mb-10 md:max-w-sm ">
+                    <img src="nft.webp" class="rounded-md " alt="">
+                    <header>
+                        <h2 class="text-xl font-bold px-2">Create Your Own Avatar</h2>
+
+                    </header>
+                    <p class="px-2 mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                        vitae, corporis
+                        aspernatur adipisci
+                        iusto nesciunt. Sequi voluptate, impedit unde, iste adipisci quasi voluptatum deleniti nobis,
+                        mollitia
+                        optio similique ab officiis.</p>
+                    <button class="bg-blue-500 px-4 py-2 m-2 rounded-sm">Get Started</button>
+                </div>
+                <div class="bg-white  max-w-xs whitespace-normal  rounded-md  mb-10  md:max-w-sm ">
+                    <img src="nft.webp" class="rounded-md " alt="">
+                    <header>
+                        <h2 class="text-xl font-bold px-2">Create Your Own Avatar</h2>
+
+                    </header>
+                    <p class="px-2 mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                        vitae, corporis
+                        aspernatur adipisci
+                        iusto nesciunt. Sequi voluptate, impedit unde, iste adipisci quasi voluptatum deleniti nobis,
+                        mollitia
+                        optio similique ab officiis.</p>
+                    <button class="bg-blue-500 px-4 py-2 m-2 rounded-sm">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
